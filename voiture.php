@@ -11,7 +11,7 @@ class VoitureElec extends Voiture{
 }
 }
 
-    public function  __construct($marque, $modele, $nbPortes){
+    public function  __construct($marque, $modele){
         $this->_marque = $marque;
         $this->_modele = $modele;   
     }

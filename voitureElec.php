@@ -4,7 +4,7 @@
     private string $_modele;
     private string $_autonomie;
 
-    public function  __construct($marque, $modele, $nbPortes){
+    public function  __construct($marque, $modele, $autonomie){
         $this->_marque = $marque;
         $this->_modele = $modele;   
     }

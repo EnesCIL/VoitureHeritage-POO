@@ -1,6 +1,11 @@
-<?
-include "voiture.php";
+<?php
+include "Voiture.php";
+include "VoitureElec.php";
 
-include "voitureElec.php";
+$v1 = new Voiture("Peugeot", "408");
+$ve1 = new VoitureElec("BMW", "i3", 150);
 
+echo $v1 . "<br/>";
+echo $ve1 . "<br/>";
 ?>
+

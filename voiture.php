@@ -1,7 +1,7 @@
 <?php
 class Voiture {
-    private string $_marque;
-    private string $_modele;
+    protected string $_marque;
+    protected string $_modele;
 
     public function __construct($marque, $modele) {
         $this->_marque = $marque;
@@ -24,6 +24,10 @@ class Voiture {
         $this->_modele = $modele;
     }
 
+    public function getInfos(){
+        return $this->_marque.' '.$this->_modele;
+       
+    }
     function __toString()
     {
          

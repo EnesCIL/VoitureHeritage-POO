@@ -14,10 +14,15 @@ final class VoitureElec extends Voiture {
     public function setAutonomie($autonomie) {
         $this->_autonomie = $autonomie;
     }
- 
+
+    public function getInfos(){
+        return parent::getInfos().' '. $this->_autonomie;
+       
+    }
+
      public function __toString() {
         return parent::__toString().' '. $this->_autonomie;
-}
+    }
 }
 ?>
 
